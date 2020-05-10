@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="13dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:paddingRight="13dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textColor="#000"
+        android:id="@+id/text" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textAllCaps="true"
+        android:background="@android:drawable/btn_star"
+        android:id="@+id/edit"
+        android:textColor="#bfb34e"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

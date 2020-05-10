@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Master TV Remote control</string>
+    <string name="banner_home_footer">ca-app-pub-4000311012184459/8674338127</string>
+    <string name="interstitial_ad">ca-app-pub-4000311012184459/1151071329</string>
+    <string name="brand_list">Select Brands</string>
+    <string name="mtv">MyTV</string>
+    <string name="about">About</string>
+    <string name="theme">Theme</string>
+    <string name="toolbar_list">List of TV brands</string>
+    <string name="toolbar_mytv">MyTV</string>
+    <string name="mytv_toolbar_action">Add TV to favorite</string>
+    <string name="toolbar_theme">Theme</string>
+    <string name="toolbar_about">About</string>
+    <string name="about_content">Master TV Remote Control powred by Tinydigital can be used as a Universal remote control for your Tv. Note that Phone or Tablet with built in IR blaster is required. Your feedback is very important to us. Please email us To add your Tv brand as soon as we possibly can. Thank You !</string>
+    <string name="select_theme">Select Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="white_theme">White Theme</string>
+    <string name="toast_list">Long press to add item to MyTV</string>
+    <string name="toast_mytv">Long press to remove item from MyTV</string>
+</resources>

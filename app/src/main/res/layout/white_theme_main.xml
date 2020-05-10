@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.tvremote.MainActivity"
+    android:background="#d2d2d2"
+    tools:showIn="@layout/activity_main_white">
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/btn_power_white"
+        android:id="@+id/buttonpower"
+        android:onClick="irSend"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/mute_button_white"
+        android:id="@+id/mutebutton"
+        android:onClick="irSend"
+        android:layout_above="@+id/volimageView"
+        android:layout_toEndOf="@+id/down" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/btn_vol_white"
+        android:id="@+id/volimageView"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/buttonpower"
+        android:layout_toStartOf="@+id/control" />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:id="@+id/volup"
+        android:background="@android:color/transparent"
+        android:onClick="irSend"
+        android:layout_alignTop="@+id/control"
+        android:layout_alignEnd="@+id/volimageView" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:id="@+id/voldown"
+        android:onClick="irSend"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/control"
+        android:layout_toStartOf="@+id/control" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/btn_prg_white"
+        android:id="@+id/prgimageView"
+        android:layout_alignTop="@+id/volimageView"
+        android:layout_toEndOf="@+id/right" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/chup"
+        android:onClick="irSend"
+        android:layout_alignTop="@+id/prgimageView"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/chdown"
+        android:onClick="irSend"
+        android:layout_alignBottom="@+id/control"
+        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:layout_width="208dp"
+        android:layout_height="208dp"
+        android:textColor="#000"
+        android:background="@drawable/control_buttons_white"
+        android:id="@+id/control"
+        android:onClick="irSend"
+        android:layout_alignBottom="@+id/volimageView"
+        android:layout_alignStart="@+id/left"
+        android:layout_alignTop="@+id/volimageView"
+        android:layout_toStartOf="@+id/prgimageView" />
+    <ImageButton
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:textColor="#000"
+        android:background="@android:color/transparent"
+        android:id="@+id/Ok"
+        android:onClick="irSend"
+        android:layout_above="@+id/down"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:background="@android:color/transparent"
+        android:id="@+id/up"
+        android:layout_marginRight="10dp"
+        android:onClick="irSend"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/control"
+        android:layout_alignStart="@+id/down" />
+    <ImageButton
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:background="@android:color/transparent"
+        android:id="@+id/down"
+        android:layout_marginRight="10dp"
+        android:onClick="irSend"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/control"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="138dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/left"
+        android:onClick="irSend"
+        android:layout_alignTop="@+id/Ok"
+        android:layout_toStartOf="@+id/plusbutton"
+        android:layout_above="@+id/down" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="138dp"
+        android:textColor="#000"
+        android:background="@android:color/transparent"
+        android:id="@+id/right"
+        android:onClick="irSend"
+        android:layout_toEndOf="@+id/plusbutton"
+        android:layout_below="@+id/volup"
+        android:layout_above="@+id/down" />
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textColor="#000"
+        android:background="@drawable/plus_button_white"
+        android:id="@+id/plusbutton"
+        android:layout_marginTop="10dp"
+        android:onClick="irSend"
+        android:layout_below="@+id/down"
+        android:layout_centerHorizontal="true" />
+
+    <include layout="@layout/digits_layout_white"/>
+
+
+    <ImageButton
+        android:layout_width="93dp"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:background="@drawable/btn_cancel_white"
+        android:id="@+id/exit"
+        android:onClick="irSend"
+        android:layout_alignBottom="@+id/plusbutton"
+        android:layout_alignEnd="@+id/chdown" />
+    <ImageButton
+        android:layout_width="93dp"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:background="@drawable/btn_info_white"
+        android:id="@+id/menu"
+        android:onClick="irSend"
+        android:layout_alignBottom="@+id/plusbutton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/brandname"
+        android:textColor="#FFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
